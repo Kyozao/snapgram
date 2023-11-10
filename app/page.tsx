@@ -1,5 +1,6 @@
 import FormInput from "@/components/FormInput";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
             Create a new account
           </h1>
           <p className="text-violet-200 text-sm">
-            To use Snapgram enter your details
+            To use Snapgram please enter your details
           </p>
         </section>
         <form action="" className="flex flex-col gap-y-2">
@@ -19,7 +20,15 @@ export default function Home() {
           <FormInput inputName={"Username"} inputId={"username"} />
           <FormInput inputName={"Email"} inputId={"email"} />
           <FormInput inputName={"Password"} inputId={"password"} />
-          <button type="submit" className="btn btn-primary mt-2">Sign Up</button>
+          <button type="submit" className="btn btn-primary mt-2">
+            Sign Up
+          </button>
+          <p className="text-neutral-300 text-center">
+            Already have an account?{" "}
+            <Link href={"#"} className="text-primary">
+              Log in
+            </Link>
+          </p>
         </form>
       </main>
     </div>
