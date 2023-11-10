@@ -16,10 +16,18 @@ export default function Home() {
           </p>
         </section>
         <form action="" className="flex flex-col gap-y-2">
-          <FormInput inputName={"Name"} inputId={"name"} />
-          <FormInput inputName={"Username"} inputId={"username"} />
-          <FormInput inputName={"Email"} inputId={"email"} />
-          <FormInput inputName={"Password"} inputId={"password"} />
+          <FormInput inputName={"Name"} inputId={"name"} inputType="text" />
+          <FormInput
+            inputName={"Username"}
+            inputId={"username"}
+            inputType="text"
+          />
+          <FormInput inputName={"Email"} inputId={"email"} inputType="text" />
+          <FormInput
+            inputName={"Password"}
+            inputId={"password"}
+            inputType="password"
+          />
           <button type="submit" className="btn btn-primary mt-2">
             Sign Up
           </button>

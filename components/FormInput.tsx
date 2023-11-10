@@ -1,6 +1,7 @@
 interface FormInputProps {
   inputName: string;
   inputId: string;
+  inputType: string;
 }
 
 const FormInput: React.FC<FormInputProps> = (props) => {
@@ -10,7 +11,7 @@ const FormInput: React.FC<FormInputProps> = (props) => {
         <span>{props.inputName}</span>
       </label>
       <input
-        type="text"
+        type={props.inputType}
         name={props.inputId}
         id={props.inputId}
         className="input bg-neutral-800 text-white w-80"
