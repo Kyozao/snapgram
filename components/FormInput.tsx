@@ -6,8 +6,8 @@ interface FormInputProps {
 
 const FormInput: React.FC<FormInputProps> = (props) => {
   return (
-    <form className="flex flex-col gap-y-2">
-      <label htmlFor="name" className="text-white">
+    <div className="flex flex-col gap-y-2">
+      <label htmlFor={props.inputId} className="text-white">
         <span>{props.inputName}</span>
       </label>
       <input
@@ -16,7 +16,7 @@ const FormInput: React.FC<FormInputProps> = (props) => {
         id={props.inputId}
         className="input bg-neutral-800 text-white w-80"
       />
-    </form>
+    </div>
   );
 };
 
