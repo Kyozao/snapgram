@@ -14,7 +14,7 @@ const FormInput: React.FC<FormInputProps> = (props) => {
         type={props.inputType}
         name={props.inputId}
         id={props.inputId}
-        className="input bg-neutral-800 text-white w-80"
+        className="input bg-neutral-900 text-white w-80"
       />
     </div>
   );
