@@ -1,6 +1,8 @@
 import FormInput from "@/components/FormInput";
 import Image from "next/image";
 import Link from "next/link";
+import { createClient } from "@supabase/supabase-js";
+import { Auth, ThemeSupa } from '@supabase/auth-ui-react'
 
 export default function Home() {
   return (
