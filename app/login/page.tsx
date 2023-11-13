@@ -33,7 +33,7 @@ export default function Home() {
             Don&apos;t have an account yet?{" "}
             <Link href={"/signup"} className="text-primary">
               Sign up
-            </Link>.
+            </Link>
           </p>
         </form>
       </main>
