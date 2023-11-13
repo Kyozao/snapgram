@@ -30,7 +30,7 @@ export default function Home() {
             Login
           </button>
           <p className="text-neutral-300 text-center">
-            Don&apos;t have an account yet???{" "}
+            Don&apos;t have an account yet?{" "}
             <Link href={"/signup"} className="text-primary">
               Sign up
             </Link>
