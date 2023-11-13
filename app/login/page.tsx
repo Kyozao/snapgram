@@ -2,7 +2,7 @@ import FormInput from "@/components/FormInput";
 import Image from "next/image";
 import Link from "next/link";
 import { createClient } from "@supabase/supabase-js";
-import { Auth, ThemeSupa } from '@supabase/auth-ui-react'
+import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
             Login
           </button>
           <p className="text-neutral-300 text-center">
-            Don&apos;t have an account yet?{" "}
+            Don&apos;t have an account yet???{" "}
             <Link href={"/signup"} className="text-primary">
               Sign up
             </Link>
