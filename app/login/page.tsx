@@ -27,56 +27,38 @@ export default function Home() {
             To use Snapgram please enter your details
           </p>
         </section>
-        <form action="" className="flex flex-col gap-y-2">
-          {/*<FormInput
-            inputName={"Username"}
-            inputId={"username"}
-            inputType="text"
-          />
-          <FormInput
-            inputName={"Password"}
-            inputId={"password"}
-            inputType="password"
-          />
-          <button type="submit" className="btn btn-primary mt-2">
-            Login
-          </button>
-          <p className="text-neutral-300 text-center">
-            Don&apos;t have an account yet?{" "}
-            <Link href={"/signup"} className="text-primary">
-              Sign up
-            </Link>
-          </p> */}
-          <Auth
-            supabaseClient={supabase}
-            appearance={{
-              theme: ThemeSupa,
-              variables: {
-                default: {
-                  colors: {
-                    brand: "#641AE6",
-                    brandAccent: "transparent",
-                    defaultButtonBackgroundHover: "#5616C5",
-                  },
+        <Auth
+          supabaseClient={supabase}
+          appearance={{
+            theme: ThemeSupa,
+            variables: {
+              default: {
+                colors: {
+                  brand: "#641AE6",
+                  brandAccent: "transparent",
+                  defaultButtonBackgroundHover: "#5616C5",
                 },
               },
-              className: {
-                button: "font-bold btn-primary text-[32px] mt-2",
-                input: "input",
-                container: "w-80",
+            },
+            className: {
+              button: "font-bold btn-primary text-[80px] mt-2",
+              input: "input",
+              container: "w-80",
+            },
+            style: {
+              button: { fontSize: "16px" },
+            },
+          }}
+          localization={{
+            variables: {
+              sign_in: {
+                button_label: "Login",
               },
-            }}
-            localization={{
-              variables: {
-                sign_in: {
-                  button_label: "Login",
-                },
-              },
-            }}
-            theme="dark"
-            providers={["google"]}
-          />
-        </form>
+            },
+          }}
+          theme="dark"
+          providers={["google"]}
+        />
       </main>
     </div>
   );
