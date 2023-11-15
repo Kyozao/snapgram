@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { createClient } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
+import { ThemeSupa } from "@supabase/auth-ui-shared";
 
 const supabase = createClient(
   "https://gubyqzpjyzadretjqrqi.supabase.co",
@@ -46,7 +47,12 @@ export default function Home() {
               Sign up
             </Link>
           </p>
-          <Auth supabaseClient={supabase} theme="dark" providers={["google"]} />
+          <Auth
+            supabaseClient={supabase}
+            appearance={{ theme: ThemeSupa }}
+            theme="dark"
+            providers={["google"]}
+          />
         </form>
       </main>
     </div>
