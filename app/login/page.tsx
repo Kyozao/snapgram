@@ -53,7 +53,7 @@ export default function Home() {
             theme="dark"
             providers={["google"]}
           />
-        </form>
+        </foam>
       </main>
     </div>
   );
