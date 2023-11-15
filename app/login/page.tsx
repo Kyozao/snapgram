@@ -61,19 +61,18 @@ export default function Home() {
                 },
               },
               className: {
-                button: "btn btn-primary mt-2",
+                button: "font-bold btn-primary text-[32px] mt-2",
                 input: "input",
-                container: 'w-80'
+                container: "w-80",
               },
-            }
-          }
-          localization={{
-            variables: {
-              sign_in: {
-                button_label: 'Login'
-              }
-            }
-          }}
+            }}
+            localization={{
+              variables: {
+                sign_in: {
+                  button_label: "Login",
+                },
+              },
+            }}
             theme="dark"
             providers={["google"]}
           />
