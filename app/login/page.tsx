@@ -28,7 +28,7 @@ export default function Home() {
           </p>
         </section>
         <form action="" className="flex flex-col gap-y-2">
-          <FormInput
+          {/*<FormInput
             inputName={"Username"}
             inputId={"username"}
             inputType="text"
@@ -46,10 +46,24 @@ export default function Home() {
             <Link href={"/signup"} className="text-primary">
               Sign up
             </Link>
-          </p>
+          </p> */}
           <Auth
             supabaseClient={supabase}
-            appearance={{ theme: ThemeSupa }}
+            appearance={{
+              theme: ThemeSupa,
+              variables: {
+                default: {
+                  colors: {
+                    brand: "#641AE6",
+                    brandAccent: "transparent",
+                    defaultButtonBackgroundHover: "#5616C5",
+                  },
+                },
+              },
+              className: {
+                button: "btn btn-primary mt-2",
+              },
+            }}
             theme="dark"
             providers={["google"]}
           />
