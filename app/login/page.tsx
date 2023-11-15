@@ -10,14 +10,6 @@ const supabase = createClient(
 );
 
 export default function Home() {
-  supabase.auth.onAuthStateChange(async (event) => {
-    if (event !== "SIGNED_OUT") {
-
-    } else {
-      
-    }
-  })
-
   return (
     <div className="h-full w-full flex">
       <main className="flex flex-col bg-neutral-950 h-full w-full  items-center justify-center space-y-4">
@@ -48,6 +40,7 @@ export default function Home() {
               Sign up
             </Link>
           </p>
+          <Auth supabaseClient={supabase} theme="dark" providers={["google"]}></Auth>
         </form>
       </main>
     </div>
