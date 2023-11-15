@@ -35,13 +35,17 @@ export default function Home() {
               default: {
                 colors: {
                   brand: "#641AE6",
-                  brandAccent: "transparent",
-                  defaultButtonBackgroundHover: "#5616C5",
+                  brandAccent: "#5616C5",
+                },
+              },
+              dark: {
+                colors: {
+                  defaultButtonBorder: "transparent",
                 },
               },
             },
             className: {
-              button: "font-bold btn-primary text-[80px] mt-2",
+              button: "font-bold btn-primary text-[80px]",
               input: "input",
               container: "w-80",
             },
