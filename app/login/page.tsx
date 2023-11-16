@@ -41,6 +41,7 @@ export default function Home() {
               dark: {
                 colors: {
                   defaultButtonBorder: "transparent",
+                  
                 },
               },
             },
