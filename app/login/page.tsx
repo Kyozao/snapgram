@@ -38,7 +38,11 @@ export default function Home() {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, cum
             commodi iste nihil, autem repudiandae voluptates harum rem
             praesentium incidunt necessitatibus suscipit doloremque, debitis
-            neque nisi. Labore sed repellendus quia?
+            neque nisi. Labore sed repellendus quia? Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Beatae consectetur veritatis, dolorem
+            aliquid molestias quos! Nisi, nobis, veritatis, facere debitis
+            reiciendis soluta id voluptas officiis dolorum fugiat atque quisquam
+            ex.
           </p>
         </section>
         <Auth
