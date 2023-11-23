@@ -24,7 +24,7 @@ export default function Home() {
         <section className="text-center">
           <h1 className="text-white font-bold text-2xl">Log in your account</h1>
           <p className="text-violet-200 text-sm">
-            To use Snapgram please enter your details Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptas, ut eveniet at, architecto nostrum vero ipsam illo atque fuga pariatur voluptate numquam. Fugiat ipsam tempore iure facere repellat nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit excepturi expedita voluptatum sint, molestiae rerum, a quos sunt voluptatem odio sed minima delectus ab nobis aspernatur nostrum saepe doloribus?
+            To use Snapgram please enter your details Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptas, ut eveniet at, architecto nostrum vero ipsam illo atque fuga pariatur voluptate numquam. Fugiat ipsam tempore iure facere repellat nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit excepturi expedita voluptatum sint, molestiae rerum, a quos sunt voluptatem odio sed minima delectus ab nobis aspernatur nostrum saepe doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cum quidem architecto libero eius nemo ad voluptatibus incidunt molestiae, officia labore voluptatem consequatur corporis ex provident molestias sequi quae maxime.
           </p>
         </section>
         <Auth
